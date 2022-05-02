@@ -13,4 +13,4 @@
 // chain(2, [add, mult]);
 // // returns 90;
 
-const chain = (input, fs) => fs[1](fs[0](input));
+const chain = (input, fs) => fs.reduce((acc,x) => x(acc), input);
