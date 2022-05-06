@@ -6,8 +6,8 @@
 
 function twoSort(s) {
     let sorted = s.sort()[0].split('')
-    return sorted.map((x, i) => 
-      i === sorted.length - 1 ? 
-        x : x  + '***'
+    return sorted.map((x, i) =>
+        i === sorted.length - 1 ?
+            x : x + '***'
     ).join('')
-  }
+} 
