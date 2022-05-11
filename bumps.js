@@ -2,4 +2,4 @@
 
 // Unfortunately for you, your drive is very bumpy! Given a string showing either flat road ("_") or bumps ("n"), work out if you make it home safely. 15 bumps or under, return "Woohoo!", over 15 bumps return "Car Dead".
 
-const bump = str => str;
+const bump = str => str.split('').filter(x => x === 'n').length > 15 ? 'Car Dead' : 'Woohoo!';
