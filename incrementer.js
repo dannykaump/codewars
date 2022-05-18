@@ -12,6 +12,5 @@
 //                                        #  9+3 = 12 
 
 const incrementer = nums =>
-    nums.map((x, i) => x + (i + 1) > 9 ?
-        Number(((x + (i + 1)).toString().split('').slice(-1)[0]))
-        : x + (i + 1))
+    nums.map((x, i) => x + (i + 1) > 9 ? (x + (i + 1)) % 10 : x + (i + 1))
+
