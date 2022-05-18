@@ -6,7 +6,7 @@
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
 
-function duplicateEncode(word) {
-    let arr = word.toLowerCase().split('')
-    return arr.map(x => arr.filter(a => a === x).length > 1 ? `)` : `(`).join('')
-}
+const duplicateEncode = word =>
+    word.toLowerCase().split('').map((x, i, w) =>
+        w.filter(a => a === x).length > 1 ? `)` : `(`)
+    .join('')
