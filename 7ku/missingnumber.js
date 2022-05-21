@@ -7,5 +7,5 @@ function missingNo(nums) {
     for (let i = 1; i <= 100; i++) {
         arr.push(i)
     }
-    return arr.filter(x => !nums.includes(x))[0]
+    return arr.filter(x => !nums.includes(x))[0] || 0
 }
