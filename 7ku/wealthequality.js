@@ -31,3 +31,4 @@ function redistributeWealth(wealth) {
         wealth.unshift(redistributed)
     });
 }
+
